@@ -1,0 +1,171 @@
+---
+title: "Gayu_Rcodebook"
+output: html_notebook
+---
+Code Book
+This code book summarizes the resulting data fields in the output of the coursera project for "Getting and cleaning Data".
+
+The data source
+Original data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+Original description of the dataset: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+
+Column Names of the final data set( final_clean_set.txt) are below :
+==========================================================================
+subject - The ID of the subject ranging from 1 to 30 ( 30 subjects in total)
+activity - The type of activity performed out of 6 activities( LAYING,SITTING,WALKING,WALKING_UPSTAIRS,WALKING_DOWNSTAIRS,STANDING)
+
+Measurements for the subject/activity as below :
+========================================================
+subject-Subject id of this observation
+activity-activity performed by the subject
+tBodyAcc-mean-X-time domain  body accelerator signal - mean-X axis
+tBodyAcc-mean-Y-time domain  body accelerator signal -mean- Y axis
+tBodyAcc-mean-Z-time domain  body accelerator signal -mean- Z axis
+tGravityAcc-mean-X-time domain gravity accelerator signal-mean- X axis
+tGravityAcc-mean-Y-time domain gravity accelerator signal- mean-Y axis
+tGravityAcc-mean-Z-time domain gravity accelerator signal-mean- Z axis
+tBodyAccJerk-mean-X-time domain body accelerator Jerk signal-mean-X axis
+tBodyAccJerk-mean-Y-time domain body accelerator Jerk signal-mean-Y axis
+tBodyAccJerk-mean-Z-time domain body accelerator Jerk signal-mean-Z axis
+tBodyGyro-mean-X-time domain body gyro signal-mean- X axis
+tBodyGyro-mean-Y-time domain body gyro signal-mean- Y axis
+tBodyGyro-mean-Z-time domain body gyro signal-mean- Z axis
+tBodyGyroJerk-mean-X-time domain body gyro jerk signal-mean-X axis
+tBodyGyroJerk-mean-Y-time domain body gyro jerk signal-mean-Y axis
+tBodyGyroJerk-mean-Z-time domain body gyro jerk signal-mean-Z axis
+tBodyAccMag-mean-time domain body accelerator signal Mag-man-X axis
+tGravityAccMag-mean-time gravity accelerator mag mean signal
+tBodyAccJerkMag-mean-time body accelerator Jerk Mag mean signal
+tBodyGyroMag-mean-time body gyro Mag mean signal
+tBodyGyroJerkMag-mean-time body gyro jerk Mag mean signal
+fBodyAcc-mean-X-frequency body accelerator mean signal- X axis
+fBodyAcc-mean-Y-frequency body accelerator mean signal- Y axis
+fBodyAcc-mean-Z-frequency body accelerator mean signal- Z axis
+fBodyAcc-meanFreq-X-frequency body accelerator mean freq signal-X axis
+fBodyAcc-meanFreq-Y-frequency body accelerator mean freq signal-Y axis
+fBodyAcc-meanFreq-Z-frequency body accelerator mean freq signal-Z axis
+fBodyAccJerk-mean-X-frequency body accelerator jerk- mean signal- X axis
+fBodyAccJerk-mean-Y-frequency body accelerator jerk- mean signal- Y axis
+fBodyAccJerk-mean-Z-frequency body accelerator jerk- mean signal- Z axis
+fBodyAccJerk-meanFreq-X-frequency body Accelerator Jerk meanfreq signal-X axis
+fBodyAccJerk-meanFreq-Y-frequency body Accelerator Jerk meanfreq signal-Y axis
+fBodyAccJerk-meanFreq-Z-frequency body Accelerator Jerk meanfreq signal-Z axis
+fBodyGyro-mean-X-frequency body gyro mean signal-X axis
+fBodyGyro-mean-Y-frequency body gyro mean signal-Y axis
+fBodyGyro-mean-Z-frequency body gyro mean signal-Z axis
+fBodyGyro-meanFreq-X-frequency body gyro meanfreq signal- X axis
+fBodyGyro-meanFreq-Y-frequency body gyro meanfreq signal- Y axis
+fBodyGyro-meanFreq-Z-frequency body gyro meanfreq signal- Z axis
+fBodyAccMag-mean-frequency Body Accelerator Mag signal Mean
+fBodyAccMag-meanFreq-frequency Body Accelerator Mag signal Meanfreq
+fBodyBodyAccJerkMag-mean-frequency bodyBody Accelerator Jerk Mag mean
+fBodyBodyAccJerkMag-meanFreq-frequency bodyBody Accelerator Jerk Mag meanfreq signal
+fBodyBodyGyroMag-mean-frequency body  body gyro Mag mean signal
+fBodyBodyGyroMag-meanFreq-frequency body  body gyro Mag mean freq signal
+fBodyBodyGyroJerkMag-mean-frequency body body gyro jerk mag mean signal
+fBodyBodyGyroJerkMag-meanFreq-frequency body body gyro jerk mag meanfreq signal
+tBodyAcc-std-X-time domain signal body accelerator -Std deviation mean-X axis
+tBodyAcc-std-Y-time domain signal body accelerator -Std deviation mean-Y axis
+tBodyAcc-std-Z-time domain signal body accelerator -Std deviation mean-Z axis
+tGravityAcc-std-X-time domain gravity accelerator signal- mean of std deviation-X axis
+tGravityAcc-std-Y-time domain gravity accelerator signal- mean of std deviation-Y axis
+tGravityAcc-std-Z-time domain gravity accelerator signal- mean of std deviation-Z axis
+tBodyAccJerk-std-X-time domain body accelerator Jerk singal- std deviation- X axis
+tBodyAccJerk-std-Y-time domain body accelerator Jerk singal- std deviation- Y axis
+tBodyAccJerk-std-Z-time domain body accelerator Jerk singal- std deviation- Z axis
+tBodyGyro-std-X-time body gyro std deviation mean- X axis
+tBodyGyro-std-Y-time body gyro std deviation mean- Y axis
+tBodyGyro-std-Z-time body gyro std deviation mean- Z axis
+tBodyGyroJerk-std-X-time body gyro jerk std deviation -mean- X axis
+tBodyGyroJerk-std-Y-time body gyro jerk std deviation -mean- Y axis
+tBodyGyroJerk-std-Z-time body gyro jerk std deviation -mean- Z axis
+tBodyAccMag-std-time body accelerator Mag std deviation- mean
+tGravityAccMag-std-time gravity accelerator Mag std deviation- mean
+tBodyAccJerkMag-std-time body accelerator jerk Mag -std deviation- mean
+tBodyGyroMag-std-time body gyro Mag std deviation mean signal
+tBodyGyroJerkMag-std-time body gyro Jerk mag std deviation mean signal
+fBodyAcc-std-X-frequency domain body accelerator std deviation mean-X axis
+fBodyAcc-std-Y-frequency domain body accelerator std deviation mean-Y axis
+fBodyAcc-std-Z-frequency domain body accelerator std deviation mean-Z axis
+fBodyAccJerk-std-X-frequency body accelerator Jerk std deviation mean - X axis
+fBodyAccJerk-std-Y-frequency body accelerator Jerk std deviation mean - Y axis
+fBodyAccJerk-std-Z-frequency body accelerator Jerk std deviation mean - Z axis
+fBodyGyro-std-X-frequency body Gyro std deviation mean- X axis
+fBodyGyro-std-Y-frequency body Gyro std deviation mean- Y axis
+fBodyGyro-std-Z-frequency body Gyro std deviation mean- Z axis
+fBodyAccMag-std-frequency body accelerator Mag - std deviation mean
+fBodyBodyAccJerkMag-std-frequency body gyro  accelerator Mag - std deviation mean
+fBodyBodyGyroMag-std-frequency Body body gyro mag std deviation- mean
+fBodyBodyGyroJerkMag-std-frequency Body body gyro jerk  mag std deviation- mean
+
+Activity Labels
+=======================
+WALKING (value 1): subject was walking during the test
+WALKING_UPSTAIRS (value 2): subject was walking up a staircase during the test
+WALKING_DOWNSTAIRS (value 3): subject was walking down a staircase during the test
+SITTING (value 4): subject was sitting during the test
+STANDING (value 5): subject was standing during the test
+LAYING (value 6): subject was laying down during the test
+
+
+
+How this source data set was calculated
+==========================================
+The data represents human activity recognition using Samsung Galaxy Smart phone.The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+mad(): Median absolute deviation 
+max(): Largest value in array
+min(): Smallest value in array
+sma(): Signal magnitude area
+energy(): Energy measure. Sum of the squares divided by the number of values. 
+iqr(): Interquartile range 
+entropy(): Signal entropy
+arCoeff(): Autorregresion coefficients with Burg order equal to 4
+correlation(): correlation coefficient between two signals
+maxInds(): index of the frequency component with largest magnitude
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+skewness(): skewness of the frequency domain signal 
+kurtosis(): kurtosis of the frequency domain signal 
+bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+angle(): Angle between to vectors.
+
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+gravityMean
+tBodyAccMean
+tBodyAccJerkMean
+tBodyGyroMean
+tBodyGyroJerkMean
